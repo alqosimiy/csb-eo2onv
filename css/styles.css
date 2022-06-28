@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  text-decoration: none;
+  list-style: none;
+  color: #000;
+}
+html {
+}
+body {
+}
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.top_navbar {
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.top_menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.logo {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+}
+.logo span {
+  color: #8f95a5;
+}
+.top_menu_btn {
+  background-color: #fff;
+  border: none;
+  font-size: 36px;
+  display: none;
+}
+.top_menu a {
+  color: #263238;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.top_btn {
+  color: #000000;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 780px) {
+  .top_menu {
+    display: none;
+  }
+  .top_btn {
+    display: none;
+  }
+  .top_menu_btn {
+    display: block;
+  }
+}
+.header_main_content {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.main_title_box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+}
+h1 {
+  font-weight: 600;
+  font-size: 5vw;
+  line-height: 6vw;
+  margin-top: 25px;
+  max-width: 65%;
+}
+.title_img {
+  max-width: 20%;
+}
+.header_prg {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-size: 2vw;
+}
+.header_content_btn {
+  background: #263238;
+  color: #fff;
+  border-radius: 15px;
+  padding: 5% 10%;
+  font-weight: 400;
+  font-size: 3vw;
+}
+.header_img {
+  max-width: 100%;
+}
+.skills_items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "1 2 3"
+    "1 4 4";
+}
+.item1 {
+  grid-area: 1;
+}
+.item2 {
+  grid-area: 2;
+}
+.item3 {
+  grid-area: 3;
+}
+.item4 {
+  grid-area: 4;
+}
